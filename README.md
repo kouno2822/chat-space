@@ -1,4 +1,4 @@
-messagesテーブル
+**messagesテーブル**
 
 |Column|Type|Options|
 |------|----|-------|
@@ -11,9 +11,9 @@ messagesテーブル
 - belongs_to :user
 - belongs_to :group
   
+ 
 
-
-usersテーブル
+**usersテーブル**
 
 |Column|Type|Options|
 |------|----|-------|
@@ -25,9 +25,9 @@ usersテーブル
 - has_many :messages
 - has_many :groups, through: :groups_users
   
+ 
 
-
-groupsテーブル
+**groupsテーブル**
 
 |Column|Type|Options|
 |------|----|-------|
@@ -37,9 +37,9 @@ groupsテーブル
 - has_many :messages
 - has_many :users, through: :groups_users
   
+ 
 
-
-groups_usersテーブル
+**groups_usersテーブル**
 
 |Column|Type|Options|
 |------|----|-------|
