@@ -17,7 +17,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|email|string|null: false|
+|email|string|null: false,unique: true|
 |password|string|null: false|
 
 ### Association
@@ -31,7 +31,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false, unique: true|
 
 ### Association
 - has_many :messages
