@@ -3,7 +3,8 @@
     .Main_chat__group_info-name
       .Main_chat__group_info-name-group test
       .Main_chat__group_info-name-member Member : masa
-    %a(href="#" class ="Main_chat__group_info-btn") Edit
+    = link_to "#", class: 'Main_chat__group_info-btn' do
+      Edit  
   .Main_chat__messages
     .Main_chat__messages-list
       .Main_chat__messages-list-info
