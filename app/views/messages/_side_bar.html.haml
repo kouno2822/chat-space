@@ -1,0 +1,14 @@
+.Side_bar
+  .Side_bar__user
+    %ul.Side_bar__user-names
+      %li.Side_bar__user-names-name masa
+      %li.Side_bar__user-names-icon
+        = link_to "#", class: "Side_bar__user-names-icon-btn" do
+          = icon("fas", "cog", class: 'Side_bar__user-names-icon-btn-cog')
+        = link_to "#", class:"Side_bar__user-names-icon-btn" do
+          = icon("far", "edit", class: 'Side_bar__user-names-icon-btn-edit')
+  .Side_bar__groups
+    %ul.Side_bar__groups-block
+      %li.Side_bar__groups-block-name techcamp
+      %li.Side_bar__groups-block-message まだメッセージがありません
+
