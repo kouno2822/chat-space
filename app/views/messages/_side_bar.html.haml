@@ -1,9 +1,10 @@
 .Side_bar
   .Side_bar__user
     %ul.Side_bar__user-names
-      %li.Side_bar__user-names-name masa
+      %li.Side_bar__user-names-name
+        = @name
       %li.Side_bar__user-names-icon
-        = link_to "#", class: "Side_bar__user-names-icon-btn" do
+        = link_to edit_user_path(@user), class: "Side_bar__user-names-icon-btn" do
           = icon("fas", "cog", class: 'Side_bar__user-names-icon-btn-cog')
         = link_to "#", class:"Side_bar__user-names-icon-btn" do
           = icon("far", "edit", class: 'Side_bar__user-names-icon-btn-edit')
