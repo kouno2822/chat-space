@@ -42,30 +42,30 @@ $btn_color: #38AEF0;
             margin-left: 5px;
           }
         }
-
       }
     }
   }
   &__groups{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    color: #fff;
+    padding: 0px 20px;
+    &-block{
+      color: #fff;
+      display: block;
+      padding: 20px 0px 40px 0px;
+      text-decoration: none;
+      &-name{
+        font-size: 15px;
+      }
+      &-message{
+        font-size: 11px;
+        margin-top: 5px;
+      }
+    }
   }
 }
 
-.Side_bar__groups{
-  color: #fff;
-  padding: 0px 20px;
-  &-block{
-    padding: 20px 0px 40px 0px;
-    &-name{
-      font-size: 15px;
-    }
-    &-message{
-      font-size: 11px;
-      margin-top: 5px;
-    }
-  }
-}
 
 .Main_chat{
   width: calc(100vw - 300px);
