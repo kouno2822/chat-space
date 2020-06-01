@@ -14,6 +14,11 @@ $btn_color: #38AEF0;
   display: flex;
 }
 
+.field_with_errors {
+  display: contents;
+  // display: inline;
+}
+
 .Side_bar{
   width: 300px;
   &__user{
@@ -100,9 +105,10 @@ $btn_color: #38AEF0;
     }
   }
   &__messages{
+    overflow: auto;
+    height: calc(100vh - 100px - 90px);
+    background-color: #fafafa;
     &-list{
-      height: calc(100vh - 100px - 90px);
-      background-color: #fafafa;
       padding: 35px 0 0 40px;
       &-info{
         margin-bottom: 12px;
