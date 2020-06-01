@@ -9,5 +9,9 @@
         = link_to new_group_path, class:"Side_bar__user-names-icon-btn" do
           = icon("far", "edit", class: 'Side_bar__user-names-icon-btn-edit')
   .Side_bar__groups
-    = render "group_index"
-
+    - current_user.groups.each do |group|
+      = link_to group_messages_path(group.id), class: "Side_bar__groups-block" do
+        .Side_bar__groups-block-name
+          = group.name
+        .Side_bar__groups-block-message
+          = group.show_last_message
