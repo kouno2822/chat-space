@@ -51,6 +51,7 @@ $btn_color: #38AEF0;
     }
   }
   &__groups{
+    overflow: auto;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     color: #fff;
